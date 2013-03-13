@@ -1,0 +1,7 @@
+			Käyttöohjeet
+TUTTURUUUUU!!!!!!!!!!!!!Ohjelman aluksi käyttäjälle avautuu valikko, josta hän kirjoittamalla tarvitun numeron voi valita, minkä puun haluaa käsittelyyn. Tämän jälkeen ohjelma kysyy, kuinka monta solmua hän haluaa puuhun laitettavan. Ohjelma arpoo halutun määrän solmuja  ja lisää ne valittuun puuhun. 
+
+Seuraavaksi avautuu valikko, josta käyttäjä voi valita, minkä läpikäynnin hän haluaa suorittaa puulleen. Jos käyttäjä kirjoittaa väärän syötteen, ohjelma ajaa kolmannen vaihtoehdon läpikäynneistä. Ohjelmassa on aina mahdollisuus lopettaa ja palata takaisin päin. 
+Ohjelma hyväksyy vain numerosyötteitä. Jos käyttäjä kirjoittaa vääränlaisen syötteen, ohjelma ilmoittaa tästä eikä päästä eteenpäin sekä pyytää uutta syötettä, kunnes käyttäjä kirjoittaa oikein. 
+
+Missä kansiossa on jar ja ajamiseen tarvittavat testitiedostot.
