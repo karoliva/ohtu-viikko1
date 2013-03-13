@@ -1,0 +1,13 @@
+			Testausdokumentti
+
+TUTTURUUUU!!!!!!Solmu-luokan metodit koostuvat vain gettereistä ja settereistä, mutta niiden toimivuus on silti varmistettu JUnit-testeillä. 
+Jono -luokan metodit luovat jonon, ottavat jonosta Solmun pois, lisäävät sinne Solmun ja tarkistavat onko se tyhjä. Luokan toiminnallisuutta on testattu JUnit-testeillä.
+Arpoja - luokan metodit arpovat vain lukuja ja toimivuus on testattu JUnit-testeillä.
+Tekstikayttoliittyma-luokan metodeja on testattu Mainissa.
+AVLpuu-, Binaarihakupuu-,Punamustapuu-, Triepuu- ja Lapikulkuluokkaa on testattu manuaalisesti Mainissa. Puihin lisättiin lukuja, joilla yritettiin saada puiden lisäysmetodien virheet näkyviin. 
+Toimivuutta voidaan testata ajamalla Mainia läpi. Arpoja arpoo luvut Mainille ja lisää ne puuhun.
+
+Mitä on testattu, miten tämä tehtiin
+Minkälaisilla syötteillä testaus tehtiin (vertailupainotteisissa töissä tärkätä)
+Miten testit voidaan toistaa
+Ohjelman toiminnan empiirisen testauksen tulosten esittäminen graafisessa muodossa.
