@@ -24,16 +24,22 @@ public class VarastoTest {
     public void konstruktoriLuoTyhjanVaraston() {
         assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
     }
-    
-    @Test
-    public void konstruktoriNollaaTilavuudenJosParametriHuono(){
-        varasto=new Varasto(-1);
-        assertEquals(0.0, varasto.getTilavuus(), vertailuTarkkuus);
-    }
 
     @Test
     public void uudellaVarastollaOikeaTilavuus() {
         assertEquals(10, varasto.getTilavuus(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void toinenKonstruktoriAsettaaVarastolleOikeanTilavuuden(){
+        varasto=new Varasto(17, 0);
+        assertEquals(17, varasto.getTilavuus(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void konstruktoriAsetteeOikeanSaldon(){
+        varasto=new Varasto(17, 6);
+        assertEquals(6, varasto.getSaldo(), vertailuTarkkuus);
     }
 
     @Test
@@ -48,6 +54,25 @@ public class VarastoTest {
     public void lisataanVainPaljonkoMahtuu(){
         varasto.lisaaVarastoon(13);
         assertEquals(10, varasto.getSaldo(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void eiLisataJosMaaraHuono(){
+        varasto.lisaaVarastoon(-1.0);
+        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void otetaanVainPaljonkoLoytyy(){
+        varasto.lisaaVarastoon(10);
+        assertEquals(10, varasto.otaVarastosta(11), vertailuTarkkuus);
+    }
+    
+     @Test
+    public void eiOtetaJosMaaraHuono(){
+         varasto.lisaaVarastoon(2);
+        varasto.otaVarastosta(-1.0);
+        assertEquals(2, varasto.getSaldo(), vertailuTarkkuus);
     }
 
     @Test
