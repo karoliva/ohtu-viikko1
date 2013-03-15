@@ -24,6 +24,12 @@ public class VarastoTest {
     public void konstruktoriLuoTyhjanVaraston() {
         assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
     }
+    
+    @Test
+    public void konstruktoriNollaaTilavuudenJosParametriHuono(){
+        varasto=new Varasto(-1);
+        assertEquals(0.0, varasto.getTilavuus(), vertailuTarkkuus);
+    }
 
     @Test
     public void uudellaVarastollaOikeaTilavuus() {
@@ -36,6 +42,12 @@ public class VarastoTest {
 
         // saldon pitäisi olla sama kun lisätty määrä
         assertEquals(8, varasto.getSaldo(), vertailuTarkkuus);
+    }
+    
+    @Test
+    public void lisataanVainPaljonkoMahtuu(){
+        varasto.lisaaVarastoon(13);
+        assertEquals(10, varasto.getSaldo(), vertailuTarkkuus);
     }
 
     @Test
