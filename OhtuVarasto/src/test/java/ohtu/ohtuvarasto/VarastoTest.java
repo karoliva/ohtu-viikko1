@@ -57,6 +57,11 @@ public class VarastoTest {
     }
     
     @Test
+    public void paljonkoMahtuuToimii(){
+            assertEquals(10, varasto.paljonkoMahtuu(), vertailuTarkkuus);
+    }
+    
+    @Test
     public void eiLisataJosMaaraHuono(){
         varasto.lisaaVarastoon(-1.0);
         assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
